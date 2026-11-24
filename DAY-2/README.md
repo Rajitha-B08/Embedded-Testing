@@ -318,9 +318,3 @@ Result: 9
 
 - Understood the LIFO (Last In, First Out) principle.
 - Practiced stack implementation using ArrayList and Java Stack Class.
-
-
-
-**One small correction to keep in mind:** Your RPN implementation uses Java integer division, which truncates towards zero. This is appropriate for the usual RPN coding problem constraints.
-
-Also, since your training covers both Selenium and Java coding, keeping these as separate sections in the same daily README will make your learning progress easier to track.
