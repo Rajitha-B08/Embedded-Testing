@@ -312,7 +312,7 @@ public class Main {
 - Time Complexity: `O(n)`
 - Space Complexity: `O(1)`
 
-## 4. Day 1 – Learning Summary
+## Day 1 – Learning Summary
 
 - Learned the basic concepts and fundamentals of Software Testing.
 - Practiced array-based coding problems using Java.
