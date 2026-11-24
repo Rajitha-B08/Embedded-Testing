@@ -8,14 +8,14 @@ Locators are used in Selenium to identify and locate web elements on a webpage. 
 
 ### Types of Selenium Locators
 
- ID                 Locates an element using its ID               `By.ID`                
- Name               Locates an element using its name attribute   `By.NAME`              
- Class Name         Locates an element using its class attribute  `By.CLASS_NAME`        
- Tag Name           Locates an element using its HTML tag         `By.TAG_NAME`          
- Link Text          Locates a link using its complete text        `By.LINK_TEXT`         
- Partial Link Text  Locates a link using a part of its text       `By.PARTIAL_LINK_TEXT` 
- CSS Selector       Locates elements using CSS selector syntax    `By.CSS_SELECTOR`      
- XPath              Locates elements using XML path expressions   `By.XPATH`             
+ ID                -  Locates an element using its ID               (`By.ID`)               
+ Name              - Locates an element using its name attribute    (`By.NAME` )             
+ Class Name        - Locates an element using its class attribute   (`By.CLASS_NAME`)       
+ Tag Name          - Locates an element using its HTML tag         (`By.TAG_NAME`)          
+ Link Text         - Locates a link using its complete text        (`By.LINK_TEXT`)         
+ Partial Link Text - Locates a link using a part of its text       (`By.PARTIAL_LINK_TEXT`)
+ CSS Selector      - Locates elements using CSS selector syntax    (`By.CSS_SELECTOR`)   
+ XPath             - Locates elements using XML path expressions   (`By.XPATH`)             
 
 ### Syntax – Using Locators in Python
 
