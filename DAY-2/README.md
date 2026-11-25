@@ -39,7 +39,73 @@ driver.find_element(By.XPATH, "//input[@id='username']")
 
 driver.quit()
 ```
+### Code
 
+```
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+
+# Launch Chrome browser
+driver = webdriver.Chrome()
+
+# Open a sample webpage
+driver.get("https://www.selenium.dev/selenium/web/web-form.html")
+
+# Maximize browser
+driver.maximize_window()
+
+# 1. ID Locator
+element = driver.find_element(By.ID, "my-text-id")
+element.send_keys("Rajitha")
+print("ID Locator:", element.get_attribute("value"))
+
+# 2. NAME Locator
+element = driver.find_element(By.NAME, "my-password")
+element.send_keys("123456")
+print("NAME Locator: Password entered")
+
+# 3. CLASS_NAME Locator
+element = driver.find_element(By.CLASS_NAME, "form-control")
+print("CLASS_NAME Locator:", element.get_attribute("name"))
+
+# 4. TAG_NAME Locator
+elements = driver.find_elements(By.TAG_NAME, "input")
+print("TAG_NAME Locator: Total inputs =", len(elements))
+
+# 5. LINK_TEXT Locator
+element = driver.find_element(By.LINK_TEXT, "Return to index")
+print("LINK_TEXT Locator:", element.text)
+
+# 6. PARTIAL_LINK_TEXT Locator
+element = driver.find_element(By.PARTIAL_LINK_TEXT, "Return")
+print("PARTIAL_LINK_TEXT Locator:", element.text)
+
+# 7. CSS_SELECTOR Locator
+element = driver.find_element(By.CSS_SELECTOR, "input[name='my-text']")
+element.clear()
+element.send_keys("CSS Selector Example")
+print("CSS_SELECTOR Locator: Text entered")
+
+# 8. XPATH Locator
+element = driver.find_element(
+    By.XPATH, "//input[@name='my-text']"
+)
+print("XPATH Locator:", element.get_attribute("value"))
+
+# find_element() - returns first matching element
+element = driver.find_element(By.TAG_NAME, "input")
+print("First input:", element.get_attribute("name"))
+
+# find_elements() - returns all matching elements
+elements = driver.find_elements(By.TAG_NAME, "input")
+print("All input elements:", len(elements))
+
+# Close browser
+driver.quit()
+
+```
 ### Important Points
 
 - `find_element()` returns the first matching element.
