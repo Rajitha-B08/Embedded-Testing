@@ -24,12 +24,12 @@
 - Selenium with Python
 - Installing Selenium
 - Setting Up the Selenium Environment
-- Creating the First Selenium Script
+- Creating the Selenium Script 
 - Initializing WebDriver
 - Launching the Chrome Browser
 - Navigating to a Website
 
-**Program:** `first_script.py`
+**Program:** `browser_opening.py`
   
 ### Python WebDriverManager with Selenium – Cross-Browser Testing
 - Introduction to WebDriverManager
